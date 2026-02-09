@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Travel Booking</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f8;
+        }
+
+        header {
+            background-color: #1e90ff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .booking-form {
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+
+        .booking-form h2 {
+            margin-bottom: 20px;
+            color: #1e90ff;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: #1e90ff;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #187bcd;
+        }
+
+        .destinations {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            width: 30%;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+            padding: 15px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            margin: 10px 0;
+            color: #333;
+        }
+
+        footer {
+            background-color: #1e90ff;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Dream Travel</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Bookings</a>
+        <a href="#">Destinations</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    <!-- Booking Form -->
+    <div class="booking-form">
+        <h2>Book Your Trip</h2>
+
+        <div class="form-group">
+            <label>From</label>
+            <input type="text" placeholder="Enter departure city">
+        </div>
+
+        <div class="form-group">
+            <label>To</label>
+            <input type="text" placeholder="Enter destination">
+        </div>
+
+        <div class="form-group">
+            <label>Travel Date</label>
+            <input type="date">
+        </div>
+
+        <div class="form-group">
+            <label>Travel Type</label>
+            <select>
+                <option>Flight</option>
+                <option>Train</option>
+                <option>Bus</option>
+            </select>
+        </div>
+
+        <button>Search Trips</button>
+    </div>
+
+    <!-- Destinations -->
+    <h2 style="margin-bottom: 20px;">Popular Destinations</h2>
+    <div class="destinations">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Beach">
+            <h3>Maldives</h3>
+            <p>Relax on beautiful beaches</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff" alt="Paris">
+            <h3>Paris</h3>
+            <p>The city of love</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1548013146-72479768bada" alt="India">
+            <h3>Kerala</h3>
+            <p>God's Own Country</p>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Dream Travel | Book. Travel. Explore.</p>
+</footer>
+
+</body>
+</html>
